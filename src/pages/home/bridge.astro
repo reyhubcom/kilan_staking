@@ -1,0 +1,140 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: ' Gamya.xyz | Staking Platform Services Trusted by Institutions',
+};
+---
+
+<Layout metadata={metadata}>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69a47af3200264b38d859e1e&product=sop' async='async'></script>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'EXCHANGE',
+          href: '/home/exchange',
+        },
+        {
+          variant: 'primary',
+          text: 'Bridge NOW',
+          href: '/home/exchange',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline=""
+    actions={[
+      { variant: 'primary', target: '', text: 'Bridge NOW', href: '/home/exchange' },
+      { text: 'EXCHANGE', href: '/home/exchange' },
+    ]}
+    image={{
+      src: 'https://cdn.prod.website-files.com/6310e7dee49f08e5798eed50/638ffe6d88792b824c9ba526_How%20to%20bridge%20to%20Solana%20v7.png',
+      alt: 'AstroWind Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a><span class="trademark"></span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "COINBASE:MONUSD",
+      "title": ""
+    },
+    {
+      "proName": "COINBASE:SOLUSD",
+      "title": ""
+    },
+    {
+      "proName": "COINBASE:ETHUSD",
+      "title": ""
+    }
+  ],
+  "colorTheme": "dark",
+  "locale": "en",
+  "largeChartUrl": "",
+  "isTransparent": true,
+  "showSymbolLogo": true
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+      What is <br /> Crypto <span class="text-accent dark:text-white">Bridge</span>?<br
+      />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        A crypto bridge is a protocol or tool that enables the transfer of assets, data, or smart contract .<span class="font-semibold">calls between otherwise isolated blockchain networks. Bridges solve the interoperability problem, allowing users to move tokens</span>  (like ETH or stablecoins) across different ecosystems (e.g., Ethereum to Solana) for lower fees, faster transactions, or access to decentralized applications (dApps).</span
+      >
+      
+Functionality: They usually work by locking/burning assets on the source chain and minting equivalent "wrapped" tokens on the destination chain.
+    </Fragment>
+  </Hero2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="How Bridges Work"
+    subtitle="Most bridges don't actually move your crypto. Instead, they use one of several technical mechanisms to ensure you have the same value on the new chain."
+    columns={2}
+    items={[
+      {
+        title: 'Lock and Mint:',
+        description:
+          'The bridge locks your original asset in a smart contract on the source chain (e.g., Ethereum) and "mints" an equivalent "wrapped" version (like Wrapped BTC) on the destination chain.',
+        icon: 'tabler:layers-union',
+      },
+      {
+        title: 'Burn and Mint: ',
+        description: `Tokens are permanently destroyed (burned) on the source chain and a new, native version is created on the target chain.`,
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Liquidity Pools (Lock and Unlock):',
+        description:
+          'The bridge maintains "banks" or pools of assets on multiple chains. You deposit into the pool on Chain A and withdraw from the pool on Chain B.',
+           icon: 'tabler:writing',
+      },
+      {
+        title: 'Intent-Based:',
+        description: `A newer model where you simply state your "intent" (e.g., "move ETH to Polygon"), and a network of relayers competes to fulfill it in seconds by fronting the capital for you.`,
+        icon: 'tabler:podium',
+      },
+      
+    ]}
+  />
+
+  
+
+  <script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "4ab7df9e-18f3-42ef-94c8-2fae15dbe5cd"
+  });
+</script>
+</Layout>

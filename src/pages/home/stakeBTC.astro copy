@@ -13,24 +13,25 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: 'SaaS Landing Page',
+  title: ' Gamya.xyz | Staking Platform Services Trusted by Institutions',
 };
 ---
 
 <Layout metadata={metadata}>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69a47af3200264b38d859e1e&product=sop' async='async'></script>
   <Fragment slot="header">
     <Header
       {...headerData}
       actions={[
         {
           variant: 'secondary',
-          text: 'Login',
-          href: '#',
+          text: 'EXCHANGE',
+          href: '/home/exchange',
         },
         {
           variant: 'primary',
-          text: 'Sign Up',
-          href: '#',
+          text: 'Stake BTC',
+          href: '/home/exchange',
         },
       ]}
       isSticky
@@ -40,26 +41,72 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="SaaS Web Demo"
+    tagline=""
     actions={[
-      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/arthelokyo/astrowind' },
-      { text: 'Learn more', href: '#features' },
+      { variant: 'primary', target: '', text: 'Stake BTC', href: '/home/exchange' },
+      { text: 'EXCHANGE', href: '/home/exchange' },
     ]}
     image={{
-      src: 'https://image2url.com/r2/default/images/1773608995256-059ec8cb-0b10-4102-abd6-c48222e71f07.png',
+      src: 'https://images.unsplash.com/photo-1640032152000-f273e2ca6922?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxiaXRjb2lufGVufDB8fDB8fHww',
       alt: 'AstroWind Hero Image',
     }}
   >
     <Fragment slot="title">
-      Simplify web design with Astrowind: <br /> your ultimate <span class="text-accent dark:text-white">SaaS</span> companion<br
+      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a><span class="trademark"> </span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "colorTheme": "dark",
+  "dateRange": "1D",
+  "locale": "en",
+  "largeChartUrl": "",
+  "isTransparent": true,
+  "showFloatingTooltip": false,
+  "plotLineColorGrowing": "rgba(34, 171, 148, 1)",
+  "plotLineColorFalling": "rgba(247, 82, 95, 1)",
+  "gridLineColor": "rgba(255, 255, 255, 0)",
+  "scaleFontColor": "#DBDBDB",
+  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+  "tabs": [
+    {
+      "title": "Bitcoin Price",
+      "symbols": [
+        {
+          "s": "COINBASE:BTCUSD",
+          "d": "",
+          "base-currency-logoid": "crypto/XTVCBTC",
+          "currency-logoid": "country/US"
+        }
+      ],
+      "originalTitle": "Indices"
+    }
+  ],
+  "support_host": "https://www.tradingview.com",
+  "backgroundColor": "#0f0f0f",
+  "width": "100%",
+  "height": "130",
+  "showSymbolLogo": true,
+  "showChart": false
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+      What is <br /> Bitcoin <span class="text-accent dark:text-white">Staking</span>?<br
       />
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
+        The main benefit of Bitcoin staking is that it increases Bitcoin's utility,  .<span class="font-semibold">allowing your Bitcoin assets to play an active role</span>in securing various PoS ecosystems while generating extra rewards.</span
       >
-      Seamlessly blend the power of Astro 5.0 and Tailwind CSS to craft websites that resonate with your brand and audience.
+      
+Since Bitcoin operates on a PoW mechanism rather than PoS, innovative mechanisms, similar to Ethereum's Eigenlayer restaking, enable Bitcoin to participate indirectly in the security of other chains.
     </Fragment>
   </Hero2>
 
@@ -67,18 +114,18 @@ const metadata = {
 
   <Features
     id="features"
-    title="Why choose AstroWind?"
-    subtitle="Each of the following features enhances AstroWind's value proposition."
+    title="BTC staking series:"
+    subtitle="Deep dive on BTC staking protocols."
     columns={2}
     items={[
       {
-        title: 'Integration of Astro 5.0 and Tailwind CSS',
+        title: 'What is BTC Staking?',
         description:
-          'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
+          'Bitcoin staking differs from traditional PoS staking as it doesn’t require Bitcoin to transition from PoW to PoS like Ethereum. Instead, Bitcoin holders can earn rewards by participating in staking without converting or bridging their BTC to other assets or blockchains. Thanks to new protocols and  Bitcoin network upgrades (BIP 340–342),holders can now stake BTC directly. Staking methods and rewards vary across different protocols.',
         icon: 'tabler:layers-union',
       },
       {
-        title: 'Versatile design for startups, small businesses, and more',
+        title: 'What are the benefits of Bitcoin staking?',
         description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
         icon: 'tabler:artboard',
       },
@@ -336,13 +383,11 @@ const metadata = {
 
   <!-- BlogLatestPost Widget **************** -->
 
-  <BlogLatestPosts
-    id="blog"
-    title="Stay informed with AstroWind's blog"
-    information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts>
+  <script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "4ab7df9e-18f3-42ef-94c8-2fae15dbe5cd"
+  });
+</script>
 </Layout>
