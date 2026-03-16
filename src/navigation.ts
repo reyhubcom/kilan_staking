@@ -10,16 +10,16 @@ export const headerData = {
           href: getPermalink('/home/stakeBTC'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Stake [ ETH ]',
+          href: getPermalink('/home/stakeETH'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          text: 'Stake [ SOL ]',
+          href: getPermalink('/home/stakeSOL'),
         },
         {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Stake [ MON ]',
+          href: getPermalink('/home/stakeMON'),
         },
       ],
     },
