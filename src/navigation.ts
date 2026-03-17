@@ -60,7 +60,7 @@ export const headerData = {
       text: 'Rewards',
       links: [
         {
-          text: 'Lead Generation',
+          text: 'Ethereum [ ETH ]',
           href: getPermalink('/landing/lead-generation'),
         },
         {
