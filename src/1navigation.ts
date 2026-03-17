@@ -57,11 +57,11 @@ export const headerData = {
       ],
     },
     {
-      text: 'Protocols',
+      text: 'Rewards',
       links: [
         {
-          text: 'DeFi',
-          href: getPermalink('/protocol/defi'),
+          text: 'Ethereum [ ETH ]',
+          href: getPermalink('/landing/lead-generation'),
         },
         {
           text: 'Long-form Sales',
@@ -86,27 +86,27 @@ export const headerData = {
       ],
     },
     {
-      text: 'Rewards',
+      text: 'Protocol',
       links: [
         {
-          text: 'Ethereum',
-         href: getPermalink('/ethereum/reward'),
+          text: 'DeFi',
+          href: getBlogPermalink(),
         },
         {
-          text: 'Binance',
-           href: getPermalink('/binance/reward'),
+          text: 'Article',
+          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
         },
         {
-          text: 'Solana',
-          href: getPermalink('/solana/reward'),
+          text: 'Article (with MDX)',
+          href: getPermalink('markdown-elements-demo-post', 'post'),
         },
         {
-          text: 'Polygon',
-           href: getPermalink('/polygon/reward'),
+          text: 'Category Page',
+          href: getPermalink('tutorials', 'category'),
         },
         {
-          text: 'All Chains',
-           href: getPermalink('/all/chains'),
+          text: 'Tag Page',
+          href: getPermalink('astro', 'tag'),
         },
       ],
     },
@@ -174,9 +174,9 @@ export const footerData = {
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com"> Rey</a> · 2026 Gamya.xyz All Rights Reserved.
+    Made by <a class="text-blue-600 underline dark:text-muted" href="https://reyhub.com"> Rey</a> · 2026 Kilan.xyz All Rights Reserved.
   `,
 };
