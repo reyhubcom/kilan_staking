@@ -57,7 +57,7 @@ export const headerData = {
       ],
     },
     {
-      text: 'Landing',
+      text: 'Rewards',
       links: [
         {
           text: 'Lead Generation',
@@ -86,10 +86,10 @@ export const headerData = {
       ],
     },
     {
-      text: 'Blog',
+      text: 'Protocol',
       links: [
         {
-          text: 'Blog List',
+          text: 'DeFi',
           href: getBlogPermalink(),
         },
         {
