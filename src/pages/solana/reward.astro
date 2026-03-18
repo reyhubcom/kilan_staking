@@ -1,0 +1,124 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Binance Reward',
+};
+---
+
+<Layout metadata={metadata}>
+ <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69a47af3200264b38d859e1e&product=sop' async='async'></script>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline=""
+    title="Solana Reward"
+    subtitle="Ethereum staking rewards currently offer an estimated annual yield of approximately 1.91% to over 5% (with higher, variable rates around 2.85%–5.65% often reported) for validating network transactions. Rewards are earned through consensus participation (attestations) and transaction fees, with higher payouts for consistent validator uptime."
+    actions={[{ variant: 'primary', target: '', text: 'REWARD APP', href: '/home/exchange' }]}
+    image={{
+            src: 'https://image2url.com/r2/default/images/1773363068292-7e8eac21-d296-4a0f-a74c-2e1b94935e5e.png',
+
+      alt: 'AstroWind Hero Image',
+    }}
+  />
+
+  
+
+  
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Rewards Range Between 1.9% and 5.7% APY,"
+    testimonials={[
+      {
+        testimonial: `Ether.fi (ETHFI) is a decentralized, non-custodial liquid restaking protocol built on the Ethereum blockchain. It allows users to stake assets like Ethereum (ETH) to earn rewards while maintaining full control over their private keys.`,
+        name: 'Helius',
+        job: 'Save, Grow, Spend.',
+        image: {
+          src: 'https://pbs.twimg.com/profile_images/1676292138617675784/BNf4F9-d_400x400.jpg',
+          alt: 'Ether Fi Image',
+        },
+      },
+      {
+        testimonial: `Stake DAO is a non-custodial decentralized asset management platform built primarily on Ethereum that allows users to grow, track, and control their crypto assets through a single dashboard. It is designed to optimize yield and governance for users who hold "vote-escrowed" (ve) tokens.`,
+        name: 'Stake DAO',
+        job: 'Ethereum Rewards',
+        image: {
+          src: 'https://raw.githubusercontent.com/stake-dao/assets/refs/heads/main/assets/archive/sdt.svg',
+          alt: 'Stake DAO Image',
+        },
+      },
+      {
+        testimonial: `Kelp DAO is a decentralized liquid restaking protocol on Ethereum and EigenLayer that helps users maximize staking rewards. It enables users to deposit liquid staking tokens (like stETH) to receive rsETH, a liquid, yield-bearing token that maintains liquidity while earning additional restaking rewards.`,
+        name: 'Kelp DAO',
+        job: 'Boost your rewards on ETH,',
+        image: {
+          src: 'https://pbs.twimg.com/profile_images/2026633020942499840/7aPfbguV_400x400.jpg',
+          alt: 'Sarah Hansen Image',
+        },
+      },
+      {
+        testimonial: `Vestra DAO (VSTR) is a decentralized autonomous organization that focuses on SocialFi, a sector that combines social media engagement with decentralized finance (DeFi). Launched by the "CMLE" (Crypto Monster Limited Edition) NFT community, it operates on the Ethereum blockchain.`,
+        name: 'Vestra DAO',
+        job: 'Maximum Benefits in the DAO,',
+        image: {
+          src: 'https://jid.rerrkvifj.com/exchangeBm-upload/img/seo/SEO_vestra-dao.png',
+          alt: 'Vestra DAO Image',
+        },
+      },
+      {
+        testimonial: `‍Supernova" in the crypto and Web3 space most commonly refers to a major protocol upgrade for the MultiversX blockchain, though it is also the name of a decentralized exchange and several other distinct projects..`,
+        name: 'SuperNova',
+        job: 'Supported EVMs Ethereum, Arbitrum, Base',
+        image: {
+          src: 'https://pbs.twimg.com/profile_images/2015493662998773761/F0LU3TCT.jpg',
+          alt: 'SuperNova Image',
+        },
+      },
+      {
+        testimonial: `stake.link is a delegated liquid staking protocol built specifically for the Chainlink (LINK) ecosystem. It allows users to stake their LINK tokens and receive a share of rewards from professional Chainlink node operators while maintaining liquidity through a receipt token.`,
+        name: 'Stake Link',
+        job: 'Highest Rewards Liquid Staking',
+        image: {
+          src: 'https://coin-images.coingecko.com/coins/images/28406/large/stake.png?1696527404',
+          alt: 'Stake Link Image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '',
+      text: 'More Rewards...',
+      href: '/home/exchange',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+  
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start exploring',
+        href: '/',
+      },
+    ]}
+    title="Dive into our template collection"
+    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    
+  />
+  <script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "4ab7df9e-18f3-42ef-94c8-2fae15dbe5cd"
+  });
+</script>
+</Layout>
