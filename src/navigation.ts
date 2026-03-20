@@ -111,8 +111,8 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Wallet',
+      href: '/wallet/buy',
     },
   ],
   actions: [{ text: 'EXCHANGE', href: '/home/exchange', target: '' }],
