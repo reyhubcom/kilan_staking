@@ -124,7 +124,7 @@ export const footerData = {
       title: 'Product',
       links: [
         { text: 'Exchange', href: '/lets/exchange' },
-        { text: 'Security', href: '#' },
+        { text: 'let.1', href: 'lets/1' },
         { text: 'Team', href: '#' },
         { text: 'Enterprise', href: '#' },
         { text: 'Customer stories', href: '#' },
