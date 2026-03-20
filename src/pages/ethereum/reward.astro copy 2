@@ -112,7 +112,6 @@ const metadata = {
     ]}
     title="Dive into our template collection"
     subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
-    <link rel="stylesheet" type="text/css" href="https://letsexchange.io/widget_lets.css"><div class="lets-button" id="lets_widgetButton_M9xNA0UHctH40M5E"  style="max-width: 480px; height: 56px;">  <iframe src="https://letsexchange.io/v2/widget-button?affiliate_id=M9xNA0UHctH40M5E&is_iframe=true" width="100%" height="100%" frameBorder="0" allow="clipboard-read; clipboard-write"></iframe></div><script src="https://letsexchange.io/init_widget.js"></script>
     
   />
   <script>
