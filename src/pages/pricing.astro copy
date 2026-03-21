@@ -240,6 +240,5 @@ const metadata = {
         href: '/',
       },
     ]}
-    <a id="stealthex-banner" href="https://stealthex.io/?ref=nxllkg1baeq"><img src="https://stealthex.io/assets/banner/cross-chain/dark-750x250.webp" alt="StealthEX Banner" width="750" height="250" loading="lazy" decoding="async" style="max-width: 100%; height: auto; border-radius: 12px"></a>
   />
 </Layout>
