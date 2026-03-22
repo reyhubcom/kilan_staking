@@ -2,19 +2,19 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
 const metadata = {
-  title: 'Gamya Exchange | Best Instant Crypto Exchange',
-  ignoreTitleTemplate: true,
+  title: 'Kilan.xyz | Staking Services Trust by Intitutions',
 };
 ---
 
@@ -23,51 +23,92 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
- 
-    actions={[
-   
+    tagline=""
+     actions={[
+      {
+        variant: 'secondary',
+        target: '',
+        text: 'Staking',
+        href: '/home/staking',
+        icon: 'tabler:link',
+      },
+      {
+        variant: 'secondary',
+        target: '',
+        text: 'Yields',
+        href: 'https://www.gmonads.com/',
+        icon: 'tabler:link',
+      },
+       {
+        variant: 'secondary',
+        target: '',
+        text: 'Farming',
+        href: 'https://app.lagoon.finance/vault/143/0x0da39b740834090c146dc48357f6a435a1bb33b3?return=%2F&from=vaults',
+        icon: 'tabler:link',
+      },
+       {
+        variant: 'secondary',
+        target: '_blank',
+        text: 'Rewards',
+        href: 'https://app.detrade.fund/',
+        icon: 'tabler:link',
+      },
+       {
+        variant: 'secondary',
+        target: '',
+        text: 'All.Chains',
+        href: '/bitcoin/btc.2',
+        icon: 'tabler:circle-arrow-up-right',
+      },
+       
     ]}
-   
   >
     <Fragment slot="title">
-
-      <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
-<dotlottie-wc src="https://lottie.host/91904867-6144-4f51-b3b2-34f41b37f8f4/HTIeBdaGsH.lottie" speed="1" style="width: 100%; height: 110px" mode="forward" loop autoplay></dotlottie-wc>
-
-      Let's <span class="hidden xl:inline"></span>
-      <span class="text-accent dark:text-white"> Exchange</span> 
-    </Fragment>
-    <Fragment slot="subtitle">
+       <span class="hidden sm:inline"></span>  <span
+        class="text-accent dark:text-white"></span
+      > Staking & Rewards
+      </Fragment>
+   <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Buy, Sell, </span>  Swap Crypto: Fast, Secure, Trusted Since 2017
+        <span class="font-semibold">An institutional </span> -grade staking provider delivering secure operations and superior performance for Proof-of-Stake networks.
         </span
        
       >
 </Fragment>
 
     <Fragment slot="subtitle">
-       <CallToAction
-    actions={[
-   
-    ]}
-  >
-    <Fragment slot="title">
-     <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#0693e3" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="30" ></div>
-     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
-<dotlottie-wc src="https://lottie.host/d7debe35-623c-43f8-a986-e0c1e4233d55/8AcgS6Xip8.lottie" speed="0.2" style="width: 100%; height: 70px" mode="forward" loop autoplay></dotlottie-wc>
+   <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#0693e9" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="30" ></div>
+
+ <div id="swapzoneExchangeWidget" 
+       
+      data-logo="true" 
+       
+      data-size="full" 
+      data-refid="K-exUjoTwC"
+      data-from="btc" 
+      data-to="eth" 
+    ></div>
+    <script src="https://swapzone.io/script/exchange-widget.js"></script>
     </Fragment>
 
-    <Fragment slot="subtitle">
-   <iframe width="100%" height="100%" frameborder='none' allow="camera" src="https://widget.changelly.com?from=btc&to=*&amount=1&address=&fromDefault=btc&toDefault=eth&merchant_id=uDmkqYSVOypOAo8b&payment_id=&v=3">Can't load widget</iframe>
- </Fragment>
-    </CallToAction>
-      <span class="hidden sm:inline">
-        <span class="font-semibold">Limitless Web3 Crypto Exchange</span> Buy, Sell, Swap Crypto: Fast, Secure, Trusted Since 2017.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-white-600">Fast Crypto Exchange</span>
-    The average time for exchange is about 2 minutes. You can track the crypto swap progress on the exchange page.
+    <Fragment slot="image">
+      
     </Fragment>
   </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Accelerating the Future.Together"
+    subtitle="We're committed to a decentralized future powered by distributed ledger technology: scalable, trustless, and open for everyone, everywhere."
+  >
+   
+  </Features2>
+
+  <!-- Stats Widget ****************** -->
+</Hero>
+
+  <!-- Note Widget ******************* -->
 <script>
   (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
 
