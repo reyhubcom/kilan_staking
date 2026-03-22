@@ -1,0 +1,111 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Staking All-Chains',
+};
+---
+
+<Layout metadata={metadata}>
+ <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69b5dd4b2ab1c17237ef0cab&product=sop' async='async'></script>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline=""
+     actions={[
+      {
+        variant: 'secondary',
+        target: '_blank',
+        text: 'MonadV',
+        href: 'https://monadvision.com/validators',
+        icon: 'tabler:link',
+      },
+      {
+        variant: 'secondary',
+        target: '_blank',
+        text: 'GMonads',
+        href: 'https://www.gmonads.com/',
+        icon: 'tabler:link',
+      },
+       {
+        variant: 'secondary',
+        target: '_blank',
+        text: 'Lagoon',
+        href: 'https://app.lagoon.finance/vault/143/0x0da39b740834090c146dc48357f6a435a1bb33b3?return=%2F&from=vaults',
+        icon: 'tabler:link',
+      },
+       {
+        variant: 'secondary',
+        target: '_blank',
+        text: 'DeTrade',
+        href: 'https://app.detrade.fund/',
+        icon: 'tabler:link',
+      },
+       {
+        variant: 'secondary',
+        target: '',
+        text: 'Staking',
+        href: '/bitcoin/btc.2',
+        icon: 'tabler:circle-arrow-up-right',
+      },
+       
+    ]}
+  >
+    <Fragment slot="title">
+       <span class="hidden sm:inline"></span>  <span
+        class="text-accent dark:text-white"></span
+      > Staking All-Chains
+      </Fragment>
+   <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">Methods to Earn: </span> Yield can be earned through native staking
+        </span
+       
+      >
+</Fragment>
+
+    <Fragment slot="subtitle">
+      <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#0693e9" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="30" ></div>
+   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/ac3bc15b-863d-4d41-9e3b-2f62856a688f/ItRvzgVlh1.lottie" speed="1" style="width: 100%; height: 500px" mode="forward" loop autoplay></dotlottie-wc>
+    </Fragment>
+
+    <Fragment slot="image">
+      
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Maximise Yield, Minimise Risk,"
+    subtitle="With the growing popularity of staking in the digital asset space, we recognised the need for a robust, secure, and compliant staking product designed specifically to meet the unique needs of large-scale investors looking for opportunities to earn rewards."
+  >
+   
+  </Features2>
+
+  <!-- Stats Widget ****************** -->
+</Hero>
+
+  <!-- Note Widget ******************* -->
+<script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "1eb6126e-fc78-496d-adc5-cc7d5236a1ea"
+  });
+</script>
+  
+</Layout>
