@@ -106,7 +106,7 @@ export const headerData = {
         },
         {
           text: 'All Chains',
-           href: getPermalink('/all/chains'),
+           href: getPermalink('/home/reward'),
         },
       ],
     },
